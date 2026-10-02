@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  /* Navy blue theme with white buttons */
+  --bg: #070d1e;          /* Deep rich navy blue screen background */
+  --bg-gradient: #040814; /* Midnight navy gradient tone */
+  --card: #0f1b38;        /* Navy blue card */
+  --ink: #f8fafc;         /* Crisp bright off-white text */
+  --mute: #94a3b8;        /* Clean slate blue muted text */
+  --tile: #15264f;        /* Deep navy blue tile */
+  --tile-hover: #1c3266;  /* Elevated navy blue */
+  --line: #1e3875;        /* Navy border line */
+  --line-strong: #2d52a8; /* Stronger navy blue border */
+  --btn: #ffffff;         /* Pure white button background */
+  --btnink: #070d1e;      /* Navy blue text/icons on white buttons */
+  --btn-hover: #f1f5f9;   /* Off-white button hover */
+  --accent: #38bdf8;      /* Electric sky blue accent */
+  --accent-gold: #fbbf24; /* Golden amber for pricing and highlights */
+}
+
+:root[data-theme="light"] {
+  --bg: #070d1e;
+  --bg-gradient: #040814;
+  --card: #0f1b38;
+  --ink: #f8fafc;
+  --mute: #94a3b8;
+  --tile: #15264f;
+  --tile-hover: #1c3266;
+  --line: #1e3875;
+  --line-strong: #2d52a8;
+  --btn: #ffffff;
+  --btnink: #070d1e;
+  --btn-hover: #f1f5f9;
+  --accent: #38bdf8;
+  --accent-gold: #fbbf24;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg);
+  background-image: radial-gradient(circle at 50% 0%, #102148 0%, #070d1e 100%);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+/* Custom navy scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--line-strong);
+}

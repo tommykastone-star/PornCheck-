@@ -1,0 +1,8 @@
+{
+  "name": "PornCheck",
+  "description": "Private media organizer, categorized adult content browser, and smart vault with AI and manual classification modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
